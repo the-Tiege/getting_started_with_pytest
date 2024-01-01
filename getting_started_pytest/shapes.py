@@ -1,3 +1,37 @@
+"""
+Geometric Shapes Module
+
+This module defines a set of classes representing geometric shapes, including a base class Shape,
+and its subclasses Circle, Rectangle, and Square. The classes are designed to calculate the area
+and perimeter of the respective shapes.
+
+Classes:
+- Shape: A base class representing a generic geometric shape with methods for area and perimeter.
+- Circle: A class representing a circle, inheriting from Shape, with methods to calculate area
+          and perimeter.
+- Rectangle: A class representing a rectangle, inheriting from Shape, with methods to calculate
+             area and perimeter. It includes a custom equality comparison method (__eq__).
+- Square: A class representing a square, inheriting from Rectangle, with methods inherited from
+          Shape and Rectangle.
+
+Example Usage:
+
+circle_instance = Circle(radius=5.0)
+circle_area = circle_instance.area()
+circle_perimeter = circle_instance.perimeter()
+
+rectangle_instance = Rectangle(length=4.0, width=6.0)
+rectangle_area = rectangle_instance.area()
+rectangle_perimeter = rectangle_instance.perimeter()
+
+square_instance = Square(side_length=3.0)
+square_area = square_instance.area()
+square_perimeter = square_instance.perimeter()
+
+Note: This module is intended for educational purposes and may not cover all edge cases.
+"""
+
+
 import math
 
 
@@ -17,7 +51,6 @@ class Shape:
         Returns: 
         float: The calculated area.
         """
-        pass
 
     def perimeter(self) -> float:
         """
@@ -26,7 +59,6 @@ class Shape:
         Returns:
         float: The calculated perimeter.
         """
-        pass
 
 
 class Circle(Shape):
