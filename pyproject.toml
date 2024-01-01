@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "getting-started-pytest"
+version = "0.1.0"
+description = ""
+authors = ["the-Tiege <thomasjohndunne97@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.4.4"
+pylint = "^3.0.3"
+isort = "^5.13.2"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
