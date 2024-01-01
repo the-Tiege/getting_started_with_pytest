@@ -1,0 +1,15 @@
+# Virtual Enviorment
+.venv
+.env
+
+# Compiled Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE Files
+.vscode
+
+
+# Testing cache
+.pytest_cache
