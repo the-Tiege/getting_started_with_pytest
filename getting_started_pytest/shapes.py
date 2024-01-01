@@ -119,14 +119,38 @@ class Rectangle(Shape):
 
     def area(self) -> float:
         """
+        Calculates the area of the rectangle.
+
+        Returns:
+        float: The area of the rectangle.
         """
         return self.length * self.width
 
     def perimeter(self) -> float:
+        """
+        Calculates the perimeter of the rectangle.
+
+        Returns:
+        float: The perimeter of the rectangle.
+        """
         return (self.length * 2) + (self.width * 2)
 
 
 class Square(Rectangle):
+    """
+    A class representing a square, inheriting from the Rectangle class.
+
+    Attributes:
+    - side_length: float
+                   The length of each side of the square.
+    """
 
     def __init__(self, side_length: float) -> None:
+        """
+        Initialize a Square instance with a given side length.
+
+        Parameters:
+        - side_length: float
+                       The length of each side of the square.
+        """
         super().__init__(side_length, side_length)
