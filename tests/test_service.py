@@ -21,7 +21,7 @@ import unittest.mock as mock
 import pytest
 import requests
 
-import getting_started_pytest.service as service
+from getting_started_pytest import service
 
 
 @mock.patch("getting_started_pytest.service.get_user_from_db")
